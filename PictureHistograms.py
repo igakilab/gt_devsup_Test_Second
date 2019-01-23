@@ -3,6 +3,7 @@
 import cv2
 import glob
 
+
 #画像を16:9にトリミング、指定サイズにリサイズする
 #picture:画像 height:縦 width:横
 #return トリミング、リサイズ後の画像
@@ -13,6 +14,18 @@ def TrimmingAndResize(picture,height,width):
 
     #画像を16:9にトリミングするサイズを計算する
     #①
+    cutHeight = 0
+    cutWidth  = (16 * picHeight) //9
+
+    if(picHeight < picWidth and picWidth >= cutWidth):
+        cutHeight = picHeight
+    else:
+        cutHeight = (9 * picWidth) // 16
+        cutWidth  = picWidth
+
+    revHeight = (picHeight - cutHeight) // 2
+    revWidth  = (picWidth  - cutWidth ) // 2
+
 
     #画像を中央寄せでトリミングする
     #追加タスク
