@@ -36,6 +36,7 @@ def TrimmingAndResize(picture,height,width):
     #画像をリサイズする
     #追加タスク
     #③
+    picture = cv2.resize(picture,(width,height))
 
     return picture
 
