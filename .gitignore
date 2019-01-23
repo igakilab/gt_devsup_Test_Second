@@ -1,3 +1,6 @@
-after/keep
-/before/.keep
-/pictures/.keep
+after/*
+!.gitkeep
+before/*
+!.gitkeep
+pictures/*
+!.gitkeep
