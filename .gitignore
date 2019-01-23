@@ -1,0 +1,8 @@
+after/*
+!.keep
+
+before/*
+!.keep
+
+pictures/*
+!.keep
