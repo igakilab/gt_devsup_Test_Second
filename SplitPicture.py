@@ -16,8 +16,13 @@ def SplitPicture(img,splitHeight,splitWidth):
 
     #画像を分割しリストに入れる
     #追加タスク(タスク名：分割機能の追加)
-    #②
+    # for i in range(splitHeight):
 
+        for j in range(splitWidth):
+
+            clp = img[heightSplit*i:heightSplit*(i+1),widthSplit*j:widthSplit*(j+1)]
+
+            splitList[i][j] = clp
     print("Finished")
     return splitList
 
