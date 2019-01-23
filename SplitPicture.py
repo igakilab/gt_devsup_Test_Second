@@ -1,4 +1,4 @@
-import cv2
+﻿import cv2
 
 #画像ファイルと分割数を指定して画像を分割しリストで返す
 #img:分割する画像 splitHeight:縦の分割数 splitWidth:横の分割数
@@ -10,7 +10,10 @@ def SplitPicture(img,splitHeight,splitWidth):
 
     #分割後のピクセルを求める
     #分割した画像を入れるリストの作成
-    #①
+    #splitList = [[None for i in range(splitWidth)] for j in range(splitHeight)]
+
+
+
     #画像を分割しリストに入れる
     #追加タスク(タスク名：分割機能の追加)
     #②
