@@ -49,6 +49,8 @@ def CreateHistogram(picturesFile):
     for picture in picturesFile:
         #ヒストグラムの作成、追加
         #④
+        histogram = cv2.calcHist([picture],[0],None,[256],[0,256])
+        histograms.append(histogram)
 
     return histograms
 
