@@ -15,9 +15,11 @@ def TrimmingAndResize(picture,height,width):
     #①
 
     #画像を中央寄せでトリミングする
+    #追加タスク
     #②
 
     #画像をリサイズする
+    #追加タスク
     #③
 
     return picture
@@ -31,7 +33,7 @@ def CreateHistogram(picturesFile):
     for picture in picturesFile:
         #ヒストグラムの作成、追加
         #④
-    
+
     return histograms
 
 #一つの画像と画像リストのヒストグラムを比較し、最も類似した添字と数値を返す

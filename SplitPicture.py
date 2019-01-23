@@ -12,7 +12,8 @@ def SplitPicture(img,splitHeight,splitWidth):
     #分割した画像を入れるリストの作成
     #①
     #画像を分割しリストに入れる
-    #①
+    #追加タスク(タスク名：分割機能の追加)
+    #②
 
     print("Finished")
     return splitList
@@ -20,7 +21,7 @@ def SplitPicture(img,splitHeight,splitWidth):
 #2次元リストの画像をそれぞれ出力する
 #picList:画像リスト outputDirectory:出力先のディレクトリのパス
 def OutputPictureList(picList,outputDirectory):
-    #②  
+    #③
 
 
 #2次元リストの画像を結合し出力する
@@ -31,12 +32,13 @@ def JoinPictureList(picList,outputDirectory):
     widthJoinList = []
 
     for heightList in picList:
+        #追加タスク(タスク名:JoinPictureListの修正)
         #横に結合する
-        #③
+        #④
 
     #縦に結合する
-    #④
-    
+    #⑤
+
     print("JoinFinished")
 
 if __name__ == "__main__":
@@ -70,7 +72,7 @@ if __name__ == "__main__":
 
     img = cv2.imread("./" + fName)
     outputDirectory = "./after/"
-    
+
     splitPicList = SplitPicture(img,height,width)
 
     if(splitFlg):
