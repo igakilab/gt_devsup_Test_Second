@@ -61,7 +61,9 @@ def JoinPictureList(picList,outputDirectory):
     for heightList in picList:
         #追加タスク(タスク名:JoinPictureListの修正)
         #横に結合する
-        #④
+        #widthJoinPicture = cv2.hconcat(heightList)
+
+        widthJoinList.append(widthJoinPicture)
 
     #縦に結合する
     #⑤
