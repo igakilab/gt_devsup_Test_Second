@@ -29,7 +29,26 @@ def SplitPicture(img,splitHeight,splitWidth):
 #2次元リストの画像をそれぞれ出力する
 #picList:画像リスト outputDirectory:出力先のディレクトリのパス
 def OutputPictureList(picList,outputDirectory):
-    #③
+    #height = 0
+
+    for heightList in picList:
+
+        width = 0
+
+        for widthList in heightList:
+
+            cv2.imwrite(outputDirectory + "splitPicture" + str(height) + "-" + 
+str(width) + ".png",widthList)
+
+            width += 1
+
+
+
+        height += 1
+
+
+    
+    print("outputFinished")
 
 
 #2次元リストの画像を結合し出力する
