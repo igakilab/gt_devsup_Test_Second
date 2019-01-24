@@ -57,8 +57,11 @@ def CompareHistograms(target,pictureList):
     #targetとリストを比較し、最大値を保存する
     for i in range(len(pictureList)):
         #⑤
-
-    return maxCompareHist
+        for i in range(len(pictureList)):
+            compHist = cv2.compareHist(target,pictureList[i],0)
+            if(maxCompareHist[1] &lt; compHist):
+                maxCompareHist = [i,compHist]
+         return maxCompareHist
 
 #ディレクトリ内の指定された拡張子のファイルパスのリストを作成する
 #path:ディレクトリのパス extension:拡張子
