@@ -57,6 +57,9 @@ widthJoinPicture = cv2.hconcat(heightList)
 widthJoinList.append(widthJoinPicture)
     #縦に結合する
     #⑤
+    #縦に結合する
+joinPicture = cv2.vconcat(widthJoinList)
+cv2.imwrite(outputDirectory + "JoinPicture.png",joinPicture)
 
     print("JoinFinished")
 
