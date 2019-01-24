@@ -13,6 +13,17 @@ def TrimmingAndResize(picture,height,width):
 
     #画像を16:9にトリミングするサイズを計算する
     #①
+    cutHeight = 0
+    cutWidth  = (16 * picHeight) //9
+ 
+    if(picHeight &lt; picWidth and picWidth &gt;= cutWidth):
+        cutHeight = picHeight
+    else:
+        cutHeight = (9 * picWidth) // 16
+        cutWidth  = picWidth
+ 
+revHeight = (picHeight - cutHeight) // 2
+revWidth  = (picWidth  - cutWidth ) // 2
 
     #画像を中央寄せでトリミングする
     #追加タスク
