@@ -44,7 +44,8 @@ def CreateHistogram(picturesFile):
     for picture in picturesFile:
         #ヒストグラムの作成、追加
         #④
-
+        histogram = cv2.calcHist([picture],[0],None,[256],[0,256])
+        histograms.append(histogram)
     return histograms
 
 #一つの画像と画像リストのヒストグラムを比較し、最も類似した添字と数値を返す
