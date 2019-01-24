@@ -11,6 +11,9 @@ def SplitPicture(img,splitHeight,splitWidth):
     #分割後のピクセルを求める
     #分割した画像を入れるリストの作成
     #①
+    
+<ol class="linenums"><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="com">#分割した画像を入れるリストの作成</span></li><li class="L2"><span class="pln">splitList </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[[</span><span class="kwd">None</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> i </span><span class="kwd">in</span><span class="pln"> range</span><span class="pun">(</span><span class="pln">splitWidth</span><span class="pun">)]</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> j </span><span class="kwd">in</span><span class="pln"> range</span><span class="pun">(</span><span class="pln">splitHeight</span><span class="pun">)]</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pln">    </span></li></ol>
+    
     #画像を分割しリストに入れる
     #追加タスク(タスク名：分割機能の追加)
     #②
