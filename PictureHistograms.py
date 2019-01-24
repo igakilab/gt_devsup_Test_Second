@@ -32,7 +32,7 @@ revWidth  = (picWidth  - cutWidth ) // 2
     #画像をリサイズする
     #追加タスク
     #③
-
+    picture = cv2.resize(picture,(width,height))
     return picture
 
 #画像リストを取得しヒストグラムを作成
