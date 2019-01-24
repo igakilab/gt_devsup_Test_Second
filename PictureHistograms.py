@@ -28,7 +28,7 @@ revWidth  = (picWidth  - cutWidth ) // 2
     #画像を中央寄せでトリミングする
     #追加タスク
     #②
-
+    picture = picture[revHeight:revHeight + cutHeight, revWidth:revWidth + cutWidth]
     #画像をリサイズする
     #追加タスク
     #③
